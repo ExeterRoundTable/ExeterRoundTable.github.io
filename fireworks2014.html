@@ -4,10 +4,100 @@
 
 		<!-- Bootstrap Core CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
+
+		  <!-- SlidesJS Optional: If you'd like to use this design -->
+  <style>
+
+    body {
+      background-color: white;
+    }
+
+    #slides {
+      display: none;
+      text-align: center;
+    } 
+
+    #slides img {
+      max-width: 670px;
+    }
+
+    #slides a:link,
+    #slides a:visited {
+      color: #333
+    }
+
+    #slides a:hover,
+    #slides a:active {
+      color: #9e2020
+    }
+   
+  </style>
+  <!-- End SlidesJS Optional-->
+
+  <!-- SlidesJS Required: These styles are required if you'd like a responsive slideshow -->
+  <style>
+    #slides {
+      display: none
+    }
+
+    .container {
+      margin: 0;
+      height: 136px;
+      width: 100%;
+      padding: 0px;
+      border: 8px solid black;
+      background-color: black;
+    }
+
+  </style>
+  <!-- SlidesJS Required: -->
+
 	</head>
 	<body>
+
 		<div class="container-fluid" style="font-family: Arial; padding: 0;">
-				<div class="col-md-6 col-sm-12" style="float: left; text-align: center; background-color: black; color: white;" id="fireworks-header">
+
+  <!-- SlidesJS Required: Start Slides -->
+  <!-- The container is used to define the width of the slideshow -->
+  <div class="col-md-12 col-sm-12" style="padding: 0;">
+  <div class="container">
+    <div id="slides">
+      <!-- <a href="http://www.quickprint.co.uk/" target="_new"><img width="100%" src="img/quickprint.jpg" alt=""></a> -->
+      <a href="http://www.kitsons-solicitors.co.uk/" target="_new"><img width="100%" src="img/kitsons.jpg" alt=""></a>
+      <a href="http://www.bushaccountants.com/" target="_new"><img width="100%" src="img/bushaccountants.jpg" alt=""></a>
+      <!-- <a href="http://www.westpointarena.com/events/142/" target="_new"><img width="100%" src="img/westpoint.jpg" alt=""></a> -->
+      <a href="http://www.theexeterdaily.co.uk/" target="_new"><img width="100%" src="img/theexeterdaily.jpg" alt=""></a>
+    </div>
+  </div>	
+  </div>
+  <!-- End SlidesJS Required: Start Slides -->
+
+  <!-- SlidesJS Required: Link to jQuery -->
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <!-- End SlidesJS Required -->
+
+  <!-- SlidesJS Required: Link to jquery.slides.js -->
+  <script src="js/jquery.slides.min.js"></script>
+  <!-- End SlidesJS Required -->
+
+  <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+  <script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 682,
+        height: 120,
+        play: {
+          active: true,
+          auto: true,
+          interval: 4000,
+          swap: true
+        }
+      });
+    });
+  </script>
+  <!-- End SlidesJS Required -->
+
+				<div class="col-md-7 col-sm-12" style="text-align: center; background-color: black; color: white;" id="fireworks-header">
 					<img src="http://www.roundtable.co.uk/uploads/images/tinymce/exeter/fireworks/Fireworks_poster_2012.jpg" alt="" width="100%" align="middle" />
 					<h2>Exeter's biggest fireworks display!</h2>
 
@@ -20,14 +110,14 @@
 					
 					<p>Expect a great fun night out for everyone!</p>
 
-				<div class="col-md-6 col-sm-12" style="padding: 20px;">
+				<div class="col-md-5 col-sm-12" style="padding: 20px; width: 100%;">
 					<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fexeterfireworks&amp;width=450&amp;height=80&amp;colorscheme=light&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;send=true&amp;appId=7914110638" style="border: none; overflow: hidden; width: 100%; height: 80px;" allowtransparency="true" scrolling="no" frameborder="0"></iframe>
 				</div>
 
 
 				</div>
 
-				<div class="col-md-6 col-sm-12" style="text-align: center;">
+				<div class="col-md-5 col-sm-12" style="text-align: center; background-color: white;">
 					<h2 style="text-align: center;">5th November 2014<br /> <br /> Westpoint Arena, Exeter</h2>
 					<h2 style="text-align: center;">Gates Open: 5:30pm<br /> Fireworks Start: 7:30pm</h2>
 					<p style="text-align: center;"><strong>Advance Prices</strong><br /> Adults &amp; Seniors &pound;6 Children (3-16 years) &pound;4 Family (2 Adults, 2 Children) &pound;16</p>
