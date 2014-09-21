@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SlidesJS Standard Code Example</title>
+  <meta name="description" content="SlidesJS is a simple slideshow plugin for jQuery. Packed with a useful set of features to help novice and advanced developers alike create elegant and user-friendly slideshows.">
+  <meta name="author" content="Nathan Searles">
+
+  <!-- SlidesJS Required (if responsive): Sets the page width to the device width. -->
+  <meta name="viewport" content="width=device-width">
+  <!-- End SlidesJS Required -->
+
+  <!-- CSS for slidesjs.com example -->
+  <!-- <link rel="stylesheet" href="css/example.css"> -->
+  <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+  <!-- End CSS for slidesjs.com example -->
+
+  <!-- SlidesJS Optional: If you'd like to use this design -->
+  <style>
+    body {
+      -webkit-font-smoothing: antialiased;
+      font: normal 15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #232525;
+	  background-color:#000000;
+     
+    }
+
+    #slides {
+      display: none
+    } 
+
+    #slides a:link,
+    #slides a:visited {
+      color: #333
+    }
+
+    #slides a:hover,
+    #slides a:active {
+      color: #9e2020
+    }
+
+   
+   
+  </style>
+  <!-- End SlidesJS Optional-->
+
+  <!-- SlidesJS Required: These styles are required if you'd like a responsive slideshow -->
+  <style>
+    #slides {
+      display: none
+    }
+
+    .container {
+      margin: 0
+    }
+
+
+
+    /* For smartphones */
+    @media (max-width: 682px) {
+      .container {
+        width: auto
+      }
+    }
+
+
+  </style>
+  <!-- SlidesJS Required: -->
+</head>
+<body>
+
+  <!-- SlidesJS Required: Start Slides -->
+  <!-- The container is used to define the width of the slideshow -->
+  <div class="container">
+    <div id="slides">
+      <!-- <a href="http://www.quickprint.co.uk/" target="_new"><img src="img/quickprint.jpg" alt=""></a> -->
+      <a href="http://www.kitsons-solicitors.co.uk/" target="_new"><img src="img/kitsons.jpg" alt=""></a>
+      <a href="http://www.bushaccountants.com/" target="_new"><img src="img/bushaccountants.jpg" alt=""></a>
+      <!-- <a href="http://www.westpointarena.com/events/142/" target="_new"><img src="img/westpoint.jpg" alt=""></a> -->
+      <a href="http://www.theexeterdaily.co.uk/" target="_new"><img src="img/theexeterdaily.jpg" alt=""></a>
+    </div>
+	
+  </div>
+  <!-- End SlidesJS Required: Start Slides -->
+
+  <!-- SlidesJS Required: Link to jQuery -->
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <!-- End SlidesJS Required -->
+
+  <!-- SlidesJS Required: Link to jquery.slides.js -->
+  <script src="js/jquery.slides.min.js"></script>
+  <!-- End SlidesJS Required -->
+
+  <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+  <script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 682,
+        height: 120,
+        play: {
+          active: true,
+          auto: true,
+          interval: 4000,
+          swap: true
+        }
+      });
+    });
+  </script>
+  <!-- End SlidesJS Required -->
+</body>
+</html>
