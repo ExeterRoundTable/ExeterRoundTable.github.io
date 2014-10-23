@@ -6,8 +6,77 @@
 		<!-- Bootstrap Core CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 
-		  <!-- SlidesJS Optional: If you'd like to use this design -->
   <style>
+
+    #slides {
+      display: none
+    }
+
+    .container {
+      margin: 0;
+      height: 136px;
+      width: 100%;
+      padding: 0px;
+      border: 8px solid black;
+      background-color: black;
+    }
+
+    .advert {
+      border: 2px solid lightgray; 
+      padding: 4px; 
+      margin: 10px; 
+      float: left; 
+      background-color: white;
+    }
+
+    .mainSponsorAdvert {
+      display: inline-block; 
+      width: 432px; 
+      border: 0px solid black; 
+      margin: 20px;
+    }
+
+    .sponsorAdvert {
+      display: inline-block; 
+      width: 220px; 
+      border: 0px solid black; 
+      margin: 20px;
+    }
+
+    @media (max-width: 992px) {
+
+      .advert img {
+        width: 249px;
+        height: 180px;
+      }
+
+      .mainSponsorAdvert , .mainSponsorAdvert img {
+        width: 648px;
+        height: 330px;
+      }
+
+      .sponsorAdvert , .sponsorAdvert img {
+        width: 330px;
+        height: 330px;
+      }
+
+      body .container , body .container div, body .container a, body .container a img {
+        height:	 144px !important; 
+	padding: 0;
+	margin: 0;
+	border: 0;
+      }
+
+      body .container a img {
+	width: 804px;
+      }
+
+      .container img {
+        width: 804px;
+        height 144px;
+      }
+
+    }
 
     body {
       background-color: white;
@@ -39,25 +108,6 @@
     }
    
   </style>
-  <!-- End SlidesJS Optional-->
-
-  <!-- SlidesJS Required: These styles are required if you'd like a responsive slideshow -->
-  <style>
-    #slides {
-      display: none
-    }
-
-    .container {
-      margin: 0;
-      height: 136px;
-      width: 100%;
-      padding: 0px;
-      border: 8px solid black;
-      background-color: black;
-    }
-
-  </style>
-  <!-- SlidesJS Required: -->
 
 	</head>
 	<body>
@@ -66,7 +116,7 @@
 
   <!-- SlidesJS Required: Start Slides -->
   <!-- The container is used to define the width of the slideshow -->
-  <div class="col-md-12 col-sm-12" style="padding: 0;">
+  <div class="col-md-12 col-sm-12">
   <div class="container">
     <div id="slides">
       <a href="http://www.daat.org/" target="_new"><img width="100%" src="img/DAAT.jpg" alt=""></a>
@@ -156,7 +206,7 @@
 				<div class="col-md-6 col-sm-12" style="text-align: center;" id="fireworks-header">
 					<h2>Main sponsor</h2>
 
-					<div id="advert" style="display: inline-block; width: 432px; border: 0px solid black; margin: 20px;"><a href="http://www.daat.org/shop/Event+Tickets/" target="_blank"></a><a title="Exeter International Airport advert" href="http://www.exeter-airport.co.uk"><img src="img/ExeterInternational-SmallWideAd.png" alt="Exeter International Airport" width="432" height="220" /></a></div>
+					<div id="advert" class="mainSponsorAdvert"><a href="http://www.daat.org/shop/Event+Tickets/" target="_blank"></a><a title="Exeter International Airport advert" href="http://www.exeter-airport.co.uk"><img src="img/ExeterInternational-SmallWideAd.png" alt="Exeter International Airport" width="432" height="220" /></a></div>
 
 				</div>
 
@@ -164,9 +214,9 @@
 
 					<h2>Sponsors</h2>
 
-					<div id="advert" style="display: inline-block; width: 220px; border: 0px solid black; margin: 20px;"><a href="http://www.radioexe.co.uk/"><img src="http://www.roundtable.co.uk/uploads/images/tinymce/exeter/fireworks2013/radioexe-smallad.png" alt="Radio Exe advert" width="220" height="218" /></a></div>
+					<div id="advert" class="sponsorAdvert"><a href="http://www.radioexe.co.uk/"><img src="http://www.roundtable.co.uk/uploads/images/tinymce/exeter/fireworks2013/radioexe-smallad.png" alt="Radio Exe advert" width="220" height="218" /></a></div>
 
-					<div id="advert" style="display: inline-block; width: 220px; border: 0px solid black; margin: 20px;"><a href="http://www.daat.org/shop/Event+Tickets/" target="_blank"></a><a title="Signs Express advert" href="http://www.signsexpress.co.uk"><img src="img/SignsExpress-Smallad.png" alt="Signs Express" width="220" height="220" /></a></div>
+					<div id="advert" class="sponsorAdvert"><a href="http://www.daat.org/shop/Event+Tickets/" target="_blank"></a><a title="Signs Express advert" href="http://www.signsexpress.co.uk"><img src="img/SignsExpress-Smallad.png" alt="Signs Express" width="220" height="220" /></a></div>
 
 				</div>
 
@@ -220,37 +270,37 @@
 
 				<div class="col-md-12 col-sm-12">
 
-					<div style="border: 2px solid lightgray; padding: 4px; margin: 10px; float: left; background-color: white;"><span class="small">Advert</span><br/>
+					<div class="advert"><span class="small">Advert</span><br/>
 
 <a href="http://www.dcw.co.uk/" target="_blank"><img style="line-height: 1.4em;" src="http://www.roundtable.co.uk/uploads/images/tinymce/exeter/fireworks/ZTL_Logo_WE_ARE.JPG" alt="" width="166" height="119" /></a>
 
                                         </div>
 
-					<div style="border: 2px solid lightgray; padding: 4px; margin: 10px; float: left; background-color: white;"><span class="small">Advert</span><br/>
+					<div class="advert"><span class="small">Advert</span><br/>
 
 <a href="https://www.coaverclub.co.uk/" target="_blank"><img style="line-height: 1.4em;" src="img/Coaver-Small.png" alt="" width="166" height="120" /></a>
 
                                         </div>
 
-					<div style="border: 2px solid lightgray; padding: 4px; margin: 10px; float: left; background-color: white;"><span class="small">Advert</span><br/>
+					<div class="advert"><span class="small">Advert</span><br/>
 
 <a href="http://www.thedentureclinics.co.uk/" target="_blank"><img style="line-height: 1.4em;" src="img/CreditonAndTivertonDentalPractice-Small.png" alt="" width="166" height="120" /></a>
 
                                         </div>
 
-					<div style="border: 2px solid lightgray; padding: 4px; margin: 10px; float: left; background-color: white;"><span class="small">Advert</span><br/>
+					<div class="advert"><span class="small">Advert</span><br/>
 
 <a href="http://www.stephens-scown.co.uk/" target="_blank"><img style="line-height: 1.4em;" src="img/StephensScown-Small.png" alt="" width="166" height="120" /></a>
 
                                         </div>
 
-					<div style="border: 2px solid lightgray; padding: 4px; margin: 10px; float: left; background-color: white;"><span class="small">Advert</span><br/>
+					<div class="advert"><span class="small">Advert</span><br/>
 
 <a href="http://www.mitie.com/" target="_blank"><img style="line-height: 1.4em;" src="img/Mitie-Small.png" alt="" width="166" height="120" /></a>
 
                                         </div>
 
-					<div style="border: 2px solid lightgray; padding: 4px; margin: 10px; float: left; background-color: white;"><span class="small">Advert</span><br/>
+					<div class="advert"><span class="small">Advert</span><br/>
 
 <a href="http://www.sonicfireworks.co.uk/" target="_blank"><img style="line-height: 1.4em;" src="img/SonicFireworks-smallad.png" alt="" width="166" height="120" /></a>
 
